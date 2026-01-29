@@ -1,0 +1,15 @@
+{
+  "name": "henry-project-pulse",
+  "version": "1.0.0",
+  "description": "A lightweight CLI tool to check the pulse of your project.",
+  "main": "index.js",
+  "bin": {
+    "pulse": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
