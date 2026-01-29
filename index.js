@@ -22,7 +22,7 @@ function getPulse() {
 
   // TODO count
   try {
-    const todoOutput = execSync('grep -r "TODO:" . --exclude-dir=node_modules --exclude-dir=.git | wc -l').toString().trim();
+    const todoOutput = execSync('grep -r "TODO[: ]" . --exclude-dir=node_modules --exclude-dir=.git | grep -v "grep -r" | wc -l').toString().trim();
     pulse.todoCount = parseInt(todoOutput, 10);
   } catch (e) {
     pulse.todoCount = 0;
